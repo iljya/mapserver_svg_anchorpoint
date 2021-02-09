@@ -1,0 +1,97 @@
+MAP
+  NAME SVG_ICON_ANCHORPOINT_TEST
+  STATUS ON
+  SIZE 100 100
+  EXTENT 0 0 0.001 0.001
+  IMAGECOLOR 255 255 255
+
+  IMAGETYPE png
+
+  CONFIG "MS_ERRORFILE" "stderr"
+
+  SYMBOL
+    NAME "square_0_0"
+    TYPE svg
+    IMAGE "./square.svg"
+    ANCHORPOINT 0 0
+  END
+  SYMBOL
+    NAME "square_05_05"
+    TYPE svg
+    IMAGE "./square.svg"
+    ANCHORPOINT 0.5 0.5
+  END
+  SYMBOL
+    NAME "square_1_1"
+    TYPE svg
+    IMAGE "./square.svg"
+    ANCHORPOINT 1 1
+  END
+  SYMBOL
+    NAME "DEBUG"
+    TYPE ellipse
+    FILLED true
+    POINTS
+      1 1
+    END
+  END
+
+  LAYER
+    TYPE POINT
+    STATUS ON
+    FEATURE
+      POINTS
+        0.0004 0.0005
+      END
+      TEXT "P"
+    END
+    CLASS
+       STYLE
+         SYMBOL "square_0_0"
+       END
+       STYLE
+         COLOR 255 0 0
+         SYMBOL "DEBUG"
+       END
+    END
+  END
+  LAYER
+    TYPE POINT
+    STATUS ON
+    FEATURE
+      POINTS
+        0.0005 0.0005
+      END
+      TEXT "P"
+    END
+    CLASS
+       STYLE
+         SYMBOL "square_05_05"
+       END
+       STYLE
+         COLOR 255 0 0
+         SYMBOL "DEBUG"
+       END
+    END
+  END
+  LAYER
+    TYPE POINT
+    STATUS ON
+    FEATURE
+      POINTS
+        0.0006 0.0005
+      END
+      TEXT "P"
+    END
+    CLASS
+       STYLE
+         SYMBOL "square_1_1"
+       END
+       STYLE
+         COLOR 255 0 0
+         SYMBOL "DEBUG"
+       END
+    END
+  END
+
+END
